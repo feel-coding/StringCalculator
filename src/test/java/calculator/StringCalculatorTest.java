@@ -57,9 +57,9 @@ public class StringCalculatorTest {
     }
 
     @Test
-    @DisplayName("콤마와 콜론, 커스텀 구분자")
+    @DisplayName("커스텀 구분자")
     public void test7() {
-        int result = stringCalculator.add("//!\n1,2:3,4:5!7");
+        int result = stringCalculator.add("//!\n1!2!3!4!5!7");
         Assertions.assertEquals(22, result);
     }
 
